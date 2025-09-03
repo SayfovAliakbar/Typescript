@@ -10,24 +10,30 @@ TypeScript — это язык программирования, созданн�
 TypeScript не понимается браузерами напрямую. Его нужно скомпилировать в обычный JavaScript, и уже он выполняется в браузере.
 
 ## Примеры:
+# String
 let userName:string = "Ali"
 
+# Number
 let age:number = 25
 let temp:number = -5.7
 let distanse:number = 1e5
 
+# Boolean
 let isActive:boolean = true
 let isCompleted:boolean = false
 let hasPermission:boolean = (10 > 5)
 
+# Undefined
 let undefinedVar:undefined = undefined
 let nullVar:null = null
 let emptyValue:string | null = null
 
+# Any(любой тип)
 let flexibleVar:any = "Ali"
 flexibleVar = 42
 flexibleVar = true
 
+# Unknown(неизвестный тип)
 let unknownValue:unknown = "It's string"
 if(typeof unknownValue === "string"){
 	console.log(unknownValue.toUpperCase());
@@ -37,6 +43,7 @@ if (typeof a === "number") {
 	console.log(Math.pow(a,2));
 }
 
+# Void(без return)
 function dispInfo(a:string, b:number):void {
 	console.log(`Name: ${a}, Age: ${b}`);
 }
